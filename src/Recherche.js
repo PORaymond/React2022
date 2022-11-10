@@ -1,4 +1,5 @@
 import { Component } from "react";
+import {Button, Select} from "semantic-ui-react";
 class Recherche extends Component {
     render(){
 
@@ -24,6 +25,7 @@ class Recherche extends Component {
                 <Select placeholder="Choisissez une administration"  options={optionsType}  />
                 <Button primary> Lancer la recherche </Button>
                 <Button secondary> Vider la recherche </Button>
+
 
             </div>
         )
