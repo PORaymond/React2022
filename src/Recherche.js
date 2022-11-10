@@ -2,7 +2,8 @@ import { Component } from "react";
 import {Button, Select} from "semantic-ui-react";
 class Recherche extends Component {
 
-    state = { dpt: "", type:"" }
+    state = { depart: "", categorie:"" }
+
 
     render(){
 
@@ -24,8 +25,8 @@ class Recherche extends Component {
 
         return(
             <div className="recherche">
-                <Select placeholder="Choisissez un département" options={optionsDpt}  />
-                <Select placeholder="Choisissez une administration"  options={optionsType}  />
+                <Select placeholder="Choisissez un département" options={optionsDpt} value = {this.state.depart} />
+                <Select placeholder="Choisissez une administration"  options={optionsType}  value= {this.state.categorie} />
                 <Button primary> Lancer la recherche </Button>
                 <Button secondary> Vider la recherche </Button>
 
