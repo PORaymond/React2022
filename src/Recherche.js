@@ -4,8 +4,6 @@ class Recherche extends Component {
 
     state = { depart: "", categorie:"" };
 
-    onDepartementChange = (e, data) => {this.setState({depart:data.value})};
-    onCategorieChange = (e, data) => {this.setState({categorie:data.value})};
 
     render(){
         console.log(this.state.depart, this.state.categorie);
