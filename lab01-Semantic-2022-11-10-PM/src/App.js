@@ -10,7 +10,7 @@ class App extends Component {
    onChercher = async (a,b) =>{
       if (a&&b){
          try{
-            let reponse = await fetch('https://etablissements-publics.api.gouv.fr/v3/departements/${a}/${b}');
+            let reponse = await fetch(`https://etablissements-publics.api.gouv.fr/v3/departements/${a}/${b}`);
             let donnee = await reponse.json();
             this.setState({data:donnee.features, error:''});
          } catch (e) {
