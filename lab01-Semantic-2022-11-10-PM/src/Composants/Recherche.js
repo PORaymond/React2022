@@ -30,7 +30,7 @@ class Recherche extends Component {
             <div className="recherche">
                 <Select placeholder="Choisissez un département" options={optionsDpt} value = {this.state.depart} onChange={this.onDepartementChange} />
                 <Select placeholder="Choisissez une administration"  options={optionsType}  value= {this.state.categorie} onChange={this.onCategorieChange}/>
-                <Button primary> Lancer la recherche </Button>
+                <Button primary onClick = {()=>this.props.onChercher(this.state.depart, this.state.categorie)}> Lancer la recherche </Button>
                 <Button secondary> Vider la recherche </Button>
 
 
