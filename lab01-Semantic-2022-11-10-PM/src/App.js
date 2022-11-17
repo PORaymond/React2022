@@ -26,7 +26,7 @@ class App extends Component {
       return (<div className="App">
          <h1>Lab 01 Semantic UI React</h1>
          <Recherche onChercher = {this.onChercher}/>
-         {this.state.error? <Message warning>Hello</Message>: undefined}
+         {this.state.error? <Message warning>{this.state.error}</Message>: undefined}
       </div>);
    }
 }
