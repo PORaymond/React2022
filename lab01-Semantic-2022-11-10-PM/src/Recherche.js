@@ -1,5 +1,6 @@
 import { Component } from "react";
 import {Button, Select} from "semantic-ui-react";
+import './Recherche.css';
 class Recherche extends Component {
 
     state = { depart: "", categorie:"" };
