@@ -4,12 +4,17 @@ import {Component} from "react";
 
 class App extends Component {
 
-   state = {}
+   state = { data:[], error:''}
+
+   onChercher = (a,b) =>{
+      console.log(a,b)
+
+   }
 
    render() {
       return (<div className="App">
          <h1>Lab 01 Semantic UI React</h1>
-         <Recherche/>
+         <Recherche onChercher = {this.onChercher}/>
       </div>);
    }
 }
