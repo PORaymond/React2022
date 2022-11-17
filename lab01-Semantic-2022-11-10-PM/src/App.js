@@ -1,6 +1,7 @@
 import './App.css';
 import Recherche from "./Composants/Recherche";
 import {Component} from "react";
+import {Message} from "semantic-ui-react";
 
 class App extends Component {
 
@@ -25,6 +26,7 @@ class App extends Component {
       return (<div className="App">
          <h1>Lab 01 Semantic UI React</h1>
          <Recherche onChercher = {this.onChercher}/>
+         <Message warning>Hello</Message>
       </div>);
    }
 }
