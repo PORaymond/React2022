@@ -9,7 +9,6 @@ class Recherche extends Component {
     onCategorieChange = (e, data) => {this.setState({categorie:data.value})};
 
     render(){
-        console.log(this.state.depart, this.state.categorie);
         const optionsDpt = [
             { value: "44", key: "44", text:"Loire Atlantique"},
             { value: "49", key: "49", text:"Maine et Loire"},
@@ -32,8 +31,6 @@ class Recherche extends Component {
                 <Select placeholder="Choisissez une administration"  options={optionsType}  value= {this.state.categorie} onChange={this.onCategorieChange}/>
                 <Button primary onClick = {()=>this.props.onChercher(this.state.depart, this.state.categorie)}> Lancer la recherche </Button>
                 <Button secondary> Vider la recherche </Button>
-
-
             </div>
         )
     }
