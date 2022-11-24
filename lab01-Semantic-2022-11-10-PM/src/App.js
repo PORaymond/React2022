@@ -43,7 +43,7 @@ class App extends Component {
             : undefined
          }
          {this.state.data[0] ?
-               this.state.data[0].properties.id
+               this.state.data[0].properties.nom
             :undefined}
       </div>);
    }
