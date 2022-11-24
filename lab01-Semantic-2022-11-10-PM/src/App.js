@@ -26,14 +26,17 @@ class App extends Component {
    }
    retournerResultat = () => {
       return (
-         this.state.data.map(() => {
-            return <Etablissement/>
+         this.state.data.map((element) => {
+            return <Etablissement key = {element.properties.id} properties = {element.properties}/>
          })
       )
    }
 
    render() {
       console.log(this.state.data, this.state.error);
+      if (this.state.data[0]){
+         console.log(this.state.data[0].properties.nom);
+      }
       return (<div className="App">
          <h1>Lab 01 Semantic UI React</h1>
          <Recherche onChercher={this.onChercher} onEmpty={this.onVider}/>
