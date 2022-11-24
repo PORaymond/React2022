@@ -49,12 +49,13 @@ class App extends Component {
             </Card.Group>
             : undefined
          }
-      <!--
+         {/*
          {this.state.data[0] ?
             this.state.data[0].properties.nom
             : undefined
          }
-      -->
+         */}
+
 
       </div>);
    }
