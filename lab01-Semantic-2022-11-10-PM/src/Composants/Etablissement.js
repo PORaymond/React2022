@@ -8,16 +8,13 @@ const Etablissement = () => {
             <Card.Header>
                <p>Le nom de l’établissement</p>
             </Card.Header>
+
             <Card.Meta>
-               <p>
-                  numero de téléphone : 5141112332
-
-               </p>
+               <p>numéro de téléphone : (514)111-2332</p>
                <p>Courriel : jenesaispas@nowhere.qq</p>
-
             </Card.Meta>
+
          </Card.Content>
       </Card>)
-
 }
 export default Etablissement;

@@ -26,7 +26,9 @@ class App extends Component {
    }
    retournerResultat = () => {
       return (
-         this.state.data.map(() =>{return <Etablissement/>})
+         this.state.data.map(() => {
+            return <Etablissement/>
+         })
       )
    }
 
@@ -43,8 +45,9 @@ class App extends Component {
             : undefined
          }
          {this.state.data[0] ?
-               this.state.data[0].properties.nom
-            :undefined}
+            this.state.data[0].properties.nom
+            : undefined
+         }
       </div>);
    }
 }
