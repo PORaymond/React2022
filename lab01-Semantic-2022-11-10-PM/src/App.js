@@ -2,6 +2,7 @@ import './App.css';
 import Recherche from "./Composants/Recherche";
 import {Component} from "react";
 import {Message} from "semantic-ui-react";
+import Etablissement from "./Composants/Etablissement";
 
 class App extends Component {
 
@@ -30,6 +31,9 @@ class App extends Component {
          <h1>Lab 01 Semantic UI React</h1>
          <Recherche onChercher = {this.onChercher} onEmpty = {this.onVider}/>
          {this.state.error? <Message warning>{this.state.error}</Message>: undefined}
+         <Etablissement/>
+         <Etablissement/>
+         <Etablissement/>
       </div>);
    }
 }
