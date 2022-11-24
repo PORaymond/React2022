@@ -33,10 +33,12 @@ class App extends Component {
    }
 
    render() {
+      /*
       console.log(this.state.data, this.state.error);
       if (this.state.data[0]){
          console.log(this.state.data[0].properties.nom);
       }
+      */
       return (<div className="App">
          <h1>Lab 01 Semantic UI React</h1>
          <Recherche onChercher={this.onChercher} onEmpty={this.onVider}/>
