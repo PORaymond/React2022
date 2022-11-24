@@ -1,17 +1,17 @@
 import {Card} from "semantic-ui-react";
 
-const Etablissement = () => {
+const Etablissement = (props) => {
    return (
       <Card>
          <Card.Content>
 
             <Card.Header>
-               <p>Le nom de l’établissement</p>
+               <p>{props.properties.nom}</p>
             </Card.Header>
 
             <Card.Meta>
-               <p>numéro de téléphone : (514)111-2332</p>
-               <p>Courriel : jenesaispas@nowhere.qq</p>
+               <p>{props.properties.telephone}</p>
+               <p>{props.properties.email}</p>
             </Card.Meta>
 
          </Card.Content>
