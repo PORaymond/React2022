@@ -9,7 +9,12 @@ const Etablissement = () => {
                <p>Le nom de l’établissement</p>
             </Card.Header>
             <Card.Meta>
-               numero de téléphone : 5141112332
+               <p>
+                  numero de téléphone : 5141112332
+
+               </p>
+               <p>Courriel : jenesaispas@nowhere.qq</p>
+
             </Card.Meta>
          </Card.Content>
       </Card>)
