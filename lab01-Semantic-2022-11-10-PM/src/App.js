@@ -20,6 +20,9 @@ class App extends Component {
          this.setState({error:'Choisir les deux champs'})
       }
    }
+   onVider = () => {
+      this.setState({data:'', error:''});
+   }
 
    render() {
       console.log (this.state.data, this.state.error);
