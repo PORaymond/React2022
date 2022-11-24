@@ -12,7 +12,7 @@ class App extends Component {
          try{
             let reponse = await fetch(`https://etablissements-publics.api.gouv.fr/v3/departements/${a}/${b}`);
             let donnee = await reponse.json();
-            this.setState({data:donnee.features, error:''});
+            this.setState({data:donnee.features});
          } catch (e) {
             this.setState({error:'Connexion no aboutie avec l’API'});
          }
