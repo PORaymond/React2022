@@ -31,11 +31,14 @@ class App extends Component {
          <h1>Lab 01 Semantic UI React</h1>
          <Recherche onChercher={this.onChercher} onEmpty={this.onVider}/>
          {this.state.error ? <Message warning>{this.state.error}</Message> : undefined}
-         <Card.Group>
-            <Etablissement/>
-            <Etablissement/>
-            <Etablissement/>
-         </Card.Group>
+         {this.state.data ?
+            <Card.Group>
+               <Etablissement/>
+               <Etablissement/>
+               <Etablissement/>
+            </Card.Group>
+            : undefined
+         }
       </div>);
    }
 }
