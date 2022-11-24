@@ -6,7 +6,7 @@ import Etablissement from "./Composants/Etablissement";
 
 class App extends Component {
 
-   state = {data: [], error: ''}
+   state = {data: '', error: ''}
 
    onChercher = async (a, b) => {
       if (a && b) {
@@ -22,7 +22,12 @@ class App extends Component {
       }
    }
    onVider = () => {
-      this.setState({data: '', error: ''});
+      this.setState({data: [], error: ''});
+   }
+   retournerResultat = () => {
+      return (
+         this.state.data.map(() =>{return <Etablissement/>})
+      )
    }
 
    render() {
@@ -33,9 +38,7 @@ class App extends Component {
          {this.state.error ? <Message warning>{this.state.error}</Message> : undefined}
          {this.state.data ?
             <Card.Group>
-               <Etablissement/>
-               <Etablissement/>
-               <Etablissement/>
+               {this.retournerResultat()}
             </Card.Group>
             : undefined
          }
