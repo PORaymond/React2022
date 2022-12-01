@@ -5,6 +5,8 @@ il est nécessaire de mettre à jour react-router pour faire fonctionner le code
 ## Upgrading react-router from v5
 https://reactrouter.com/en/main/upgrading/v5
 
-### Remarque:
+### Remarques:
 
-Utiliser `npm install react-router-dom@6` à l’étape *Upgrade to React Routre v6*
+- Utiliser `npm install react-router-dom@6` à l’étape *Upgrade to React Routre v6*
+- J’essaie de faire en sorte que chaque commit soit significatif. Voir les messages de commit.
+- 
