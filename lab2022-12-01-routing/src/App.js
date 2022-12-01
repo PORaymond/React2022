@@ -2,7 +2,8 @@ import {BrowserRouter, Link, Navigate, Route, Routes} from 'react-router-dom';
 import './App.css';
 import {useState} from "react";
 
-const Accueil = () => {
+const Accueil = (props) => {
+   console.log(props);
    return (
       <div>
          <h1>Accueil</h1>
@@ -17,7 +18,8 @@ const Faq = (props) => {
       </div>)
 };
 
-const Cgv = (/*props*/) => {
+const Cgv = (props) => {
+   console.log(props);
    return (
       <div>
          <h1>Conditions générales de ventes</h1>
@@ -49,15 +51,17 @@ function App() {
    return (
       <BrowserRouter>
          <CheckProps qqchose = "abc"/>
+
          <header>
             <h2>Menu</h2>
+
             <ul>
                <li><Link to="/">Acceuil</Link></li>
                <li><Link to="/faq">Foire aux questions</Link></li>
                <li><Link to="/cgv">Condition générales de vente</Link></li>
-
             </ul>
          </header>
+
          <Routes>
             <Route path="/" element={<Accueil/>}/>
             <Route path="/faq" element={<Faq/>}/>
@@ -65,7 +69,6 @@ function App() {
             <Route path="*" element={<Page404/>}/>
          </Routes>
       </BrowserRouter>
-
    );
 }
 
