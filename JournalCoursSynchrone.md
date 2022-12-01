@@ -10,3 +10,6 @@ https://reactrouter.com/en/main/upgrading/v5
 Hooks 
 : Moyen de passer des *states* sans déclarer de classes
 useState() est un hook
+
+High order component (HOC)
+:  a function that takes a component and returns a new component.
