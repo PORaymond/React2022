@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Routes} from 'react-router-dom';
+import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
 import './App.css';
 
 const Accueil = () => {
@@ -31,8 +31,8 @@ function App() {
          <header>
             <h2>Menu</h2>
             <ul>
-               <li><a href="/">Acceuil</a></li>
-               <li><a href="/faq">Foire aux questions</a></li>
+               <li><Link to="/">Acceuil</Link></li>
+               <li><Link to="/faq">Foire aux questions</Link></li>
 
             </ul>
          </header>
