@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, } from 'react-router-dom';
 import './App.css';
 
 const Accueil = () => { return (<div>Je suis Accueil</div>) };
@@ -27,14 +27,14 @@ function App() {
     return (
         
             <BrowserRouter>
-                <Switch>
+                <Routes>
 
                     <Route path="/" component={Accueil} exact />
                     <Route path="/faq" component={Faq} />
                     <Route path="/cgv" component={Cgv} />
                     <Route path="*" component={Page404} />
 
-                </Switch>
+                </Routes>
             </BrowserRouter>
        
     );
