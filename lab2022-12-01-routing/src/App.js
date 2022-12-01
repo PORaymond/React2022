@@ -28,6 +28,14 @@ const Page404 = () => {
 function App() {
    return (
       <BrowserRouter>
+         <header>
+            <h2>Menu</h2>
+            <ul>
+               <li><a href="/">Acceuil</a></li>
+               <li><a href="/faq">Foire aux questions</a></li>
+
+            </ul>
+         </header>
          <Routes>
             <Route path="/" element={<Accueil />} />
             <Route path="/faq" element={<Faq />}/>
