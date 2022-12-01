@@ -1,10 +1,11 @@
 import {BrowserRouter, Link, Navigate, Route, Routes} from 'react-router-dom';
 import './App.css';
+import {useState} from "react";
 
 const Accueil = () => {
    return (<div>Je suis Accueil</div>)
 };
-const Faq = (props) => {
+const Faq = (/*props*/) => {
    //console.log(props);
    return (
       <div>
@@ -14,7 +15,7 @@ const Faq = (props) => {
 
 
 };
-const Cgv = (props) => {
+const Cgv = (/*props*/) => {
    return (
       <div>
          Je suis les conditions générales de ventes
@@ -22,7 +23,17 @@ const Cgv = (props) => {
 };
 const Page404 = () => {
    //return (<div> Page 404</div>)
-   return (<Navigate to = "/"  />)
+   const [connected, setConnected] = useState(false);
+
+   if (!connected) {
+      return (
+         <div>
+            <p>Vous n’êtes pas connecté</p>
+            <button onClick={() => setConnected(true)}>Se connecter</button>
+         </div>
+      );
+   }
+   return (<Navigate to="/"/>)
 };
 
 
@@ -38,10 +49,10 @@ function App() {
             </ul>
          </header>
          <Routes>
-            <Route path="/" element={<Accueil />} />
-            <Route path="/faq" element={<Faq />}/>
-            <Route path="/cgv" element={<Cgv />}/>
-            <Route path="*" element={<Page404 />}/>
+            <Route path="/" element={<Accueil/>}/>
+            <Route path="/faq" element={<Faq/>}/>
+            <Route path="/cgv" element={<Cgv/>}/>
+            <Route path="*" element={<Page404/>}/>
          </Routes>
       </BrowserRouter>
 
