@@ -6,20 +6,18 @@ const Faq = (props) => {
     //console.log(props);
     return (
         <div>
-            Je suis la foire aux questions
-        
+            La foire aux questions
         </div>)
-
-
 };
+
 const Cgv = (props) => {
     return (
         <div>
-            Je suis les conditions générales de ventes
+            Conditions générales de ventes
         </div>)
 };
 const Page404 = () => {
-   return( <div> Page 404</div>)
+   return( <div>Page 404</div>)
 };
 
 
@@ -36,7 +34,6 @@ function App() {
 
                 </Switch>
             </BrowserRouter>
-       
     );
 }
 export default App;
