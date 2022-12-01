@@ -1,4 +1,4 @@
-# lab routing
+# Lab: le routing
 
 il est nécessaire de mettre à jour react-router pour faire fonctionner le code de M. Rehouma j’ai suivi les indications suivantes:
 
