@@ -1,4 +1,4 @@
-import {BrowserRouter, Link, Route, Routes} from 'react-router-dom';
+import {BrowserRouter, Link, Navigate, Route, Routes} from 'react-router-dom';
 import './App.css';
 
 const Accueil = () => {
@@ -21,7 +21,8 @@ const Cgv = (props) => {
       </div>)
 };
 const Page404 = () => {
-   return (<div> Page 404</div>)
+   //return (<div> Page 404</div>)
+   return (<Navigate to = "/"  />)
 };
 
 
