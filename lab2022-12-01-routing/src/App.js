@@ -18,7 +18,7 @@ const Faq = (/*props*/) => {
 const Cgv = (/*props*/) => {
    return (
       <div>
-         Je suis les conditions générales de ventes
+         <h1>Conditions générales de ventes</h1>
       </div>)
 };
 const Page404 = () => {
@@ -36,10 +36,16 @@ const Page404 = () => {
    return (<Navigate to="/"/>)
 };
 
+const CheckProps = (/*props*/) =>{
+   return(
+      <div>Vérifier les props qui sont là</div>
+   )
+}
 
 function App() {
    return (
       <BrowserRouter>
+         <CheckProps/>
          <header>
             <h2>Menu</h2>
             <ul>
