@@ -3,18 +3,20 @@ import './App.css';
 import {useState} from "react";
 
 const Accueil = () => {
-   return (<div>Je suis Accueil</div>)
-};
+   return (
+      <div>
+         <h1>Accueil</h1>
+      </div>
+   )};
+
 const Faq = (props) => {
    console.log(props);
    return (
       <div>
-         Je suis la foire aux questions
-
+         <h1>Foire aux questions</h1>
       </div>)
-
-
 };
+
 const Cgv = (/*props*/) => {
    return (
       <div>
@@ -52,6 +54,7 @@ function App() {
             <ul>
                <li><Link to="/">Acceuil</Link></li>
                <li><Link to="/faq">Foire aux questions</Link></li>
+               <li><Link to="/cgv">Condition générales de vente</Link></li>
 
             </ul>
          </header>
