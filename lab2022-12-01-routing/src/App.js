@@ -5,8 +5,8 @@ import {useState} from "react";
 const Accueil = () => {
    return (<div>Je suis Accueil</div>)
 };
-const Faq = (/*props*/) => {
-   //console.log(props);
+const Faq = (props) => {
+   console.log(props);
    return (
       <div>
          Je suis la foire aux questions
@@ -36,7 +36,8 @@ const Page404 = () => {
    return (<Navigate to="/"/>)
 };
 
-const CheckProps = (/*props*/) =>{
+const CheckProps = (props) =>{
+      console.log (props);
    return(
       <div>Vérifier les props qui sont là</div>
    )
@@ -45,7 +46,7 @@ const CheckProps = (/*props*/) =>{
 function App() {
    return (
       <BrowserRouter>
-         <CheckProps/>
+         <CheckProps qqchose = "abc"/>
          <header>
             <h2>Menu</h2>
             <ul>
