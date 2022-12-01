@@ -12,4 +12,5 @@ Hooks
 useState() est un hook
 
 High order component (HOC)
-:  a function that takes a component and returns a new component.
+: A function that takes a component and returns a new component.(Définition site React)
+: Composant boosté avec des fonctionnalités supplémentaires. Ces dernières seront disponibles dans les props.
