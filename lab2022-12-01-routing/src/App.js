@@ -46,6 +46,7 @@ const CheckProps = (props) =>{
       <div>Vérifier les props qui sont là</div>
    )
 }
+//const CheckPropsWithRouter = withRouter(CheckProps);  DEPRECATED
 
 function App() {
    return (
