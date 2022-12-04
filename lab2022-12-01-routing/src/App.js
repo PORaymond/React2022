@@ -1,14 +1,19 @@
-import {BrowserRouter, Link, Navigate, Route, Routes} from 'react-router-dom';
+import {BrowserRouter, Link, Navigate, Route, Routes, useLocation, useNavigate, useParams} from 'react-router-dom';
 import './App.css';
 import {useState} from "react";
 
 const Accueil = (props) => {
-   console.log(props);
+   const navigate = useNavigate();
    return (
       <div>
-         <h1>Accueil</h1>
-      </div>
-   )};
+         Je suis la page d'Accueil! <br/> <br/>
+         <button onClick={()=>{navigate(-1)}}> Reculez CTL+Z !</button> <br/> <br/>
+         <button onClick={()=>{navigate(1)}}> Avancez  CTL+Y!</button> <br/>
+      </div>)
+
+
+};
+
 
 const Faq = (props) => {
    console.log(props);
@@ -19,12 +24,15 @@ const Faq = (props) => {
 };
 
 const Cgv = (props) => {
-   console.log(props);
+   const navigate = useNavigate();
    return (
       <div>
-         <h1>Conditions générales de ventes</h1>
+         Je suis les conditions générales de ventes ! <br/> <br/>
+         <button onClick={()=>navigate(-1)}> Reculez CTL+Z !</button> <br/> <br/>
+         <button onClick={()=>navigate(1)}> Avancez  CTL+Y!</button> <br/>
       </div>)
 };
+
 const Page404 = () => {
    //return (<div> Page 404</div>)
    const [connected, setConnected] = useState(false);
@@ -44,15 +52,29 @@ const CheckProps = (props) =>{
       console.log (props);
    return(
       <div>Vérifier les props qui sont là</div>
-   )
+   );
 }
-//const CheckPropsWithRouter = withRouter(CheckProps);  DEPRECATED
 
+const CheckPropsWithRouter = withRouter(CheckProps);
+function withRouter(Component) {
+   function ComponentWithRouterProp(props) {
+      let location = useLocation();
+      let navigate = useNavigate();
+      let params = useParams();
+      return (
+         <Component
+            {...props}
+            router={{location, navigate, params}}
+         />
+      );
+   }
+
+   return ComponentWithRouterProp;
+}
 function App() {
    return (
       <BrowserRouter>
-         <CheckProps qqchose = "abc"/>
-
+         <CheckPropsWithRouter/>
          <header>
             <h2>Menu</h2>
 
