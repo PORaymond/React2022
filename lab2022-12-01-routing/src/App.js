@@ -1,5 +1,6 @@
-import {BrowserRouter, NavLink, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, NavLink, Redirect, Route, Switch} from 'react-router-dom';
 import './App.css';
+import {useState} from "react";
 
 const Accueil = () => { return (<div>Accueil</div>) };
 const Faq = (props) => {
@@ -17,7 +18,18 @@ const Cgv = (props) => {
         </div>)
 };
 const Page404 = () => {
-   return( <div>Page 404</div>)
+   const [connected, setConnected] = useState(false);
+
+   if (!connected) {
+      return (<div>
+         <p>Vous n'êtes pas connectés ! </p>
+         <button onClick={() => setConnected(true)}> Se connecter </button>
+      </div>)
+   }
+
+   return(
+      <Redirect to={'/'}/>
+   )
 };
 
 
