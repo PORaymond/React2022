@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
 import './App.css';
 
 const Accueil = () => { return (<div>Je suis Accueil</div>) };
@@ -25,6 +25,13 @@ function App() {
     return (
         
             <BrowserRouter>
+               <header>
+                  <h2>Menu</h2>
+                  <ul>
+                     <li><Link to="/">Accueil</Link></li>
+                     <li><Link to="/faq">Foire aux questions</Link></li>
+                  </ul>
+               </header>
                 <Switch>
 
                     <Route path="/" component={Accueil} exact />
