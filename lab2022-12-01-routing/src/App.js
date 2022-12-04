@@ -16,11 +16,14 @@ const Faq = (props) => {
 
 const Cgv = (props) => {
    console.log(props);
-   return (
-      <div>
-         Conditions générales de ventes
-      </div>)
-};
+      return (
+         <div>
+            Je suis les conditions générales de ventes ! <br/> <br/>
+            <button onClick={()=>{props.history.goBack()}}> Reculez CTL+Z !</button> <br/> <br/>
+            <button onClick={()=>{props.history.goForward()}}> Avancez  CTL+Y!</button> <br/>
+         </div>)
+   };
+
 const Page404 = () => {
    const [connected, setConnected] = useState(false);
 

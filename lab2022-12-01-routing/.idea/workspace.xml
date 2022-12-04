@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ca8908-88b7-42de-ada1-4eba0f019a0d" name="Changes" comment="Afficher les props d’un composant routé vs non routé">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c1ca8908-88b7-42de-ada1-4eba0f019a0d" name="Changes" comment="Créer un HOC avec CheckProps">
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670157191455</updated>
-      <workItem from="1670157195087" duration="3647000" />
+      <workItem from="1670157195087" duration="3982000" />
     </task>
     <task id="LOCAL-00001" summary="effacer le projet qui ne fonctionnait pas">
       <created>1670157321539</created>
@@ -116,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670160165596</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Créer un HOC avec CheckProps">
+      <created>1670179504929</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670179504929</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +152,7 @@
     <MESSAGE value="Ajouter un composant Redirect" />
     <MESSAGE value="Utiliser le Hook useState avec un composant sans etat" />
     <MESSAGE value="Afficher les props d’un composant routé vs non routé" />
-    <option name="LAST_COMMIT_MESSAGE" value="Afficher les props d’un composant routé vs non routé" />
+    <MESSAGE value="Créer un HOC avec CheckProps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Créer un HOC avec CheckProps" />
   </component>
 </project>
