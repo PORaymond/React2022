@@ -46,18 +46,21 @@ const Page404 = () => {
 };
 
 const CheckProps = (props) => {
-   console.log('mon HOC :' + props +' avec withRouter');
-   console.log(props);
-   return (
-      <div>Vérifier les props de CheckProps</div>
-   )
-};
+      console.log(props);
+      return (<div>
+         <button onClick={() => {
+            props.history.push({
+               pathname: 'faq',
+               state: { params: 'abcdefghijklmnop' }
+            })
+         }}> Allez sur la  FAQ </button>
+      </div>)
+   }
+;
 const CheckPropsWithRouter = withRouter(CheckProps);
    function App() {
       return (
-
          <BrowserRouter>
-            <CheckProps qqchose="abc"/>
             <CheckPropsWithRouter/>
             <header>
                <h2>Menu</h2>

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ca8908-88b7-42de-ada1-4eba0f019a0d" name="Changes" comment="Créer un HOC avec CheckProps">
+    <list default="true" id="c1ca8908-88b7-42de-ada1-4eba0f019a0d" name="Changes" comment="ajouter des boutons de navigation qui utilis les props ajouter par withrouter">
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670157191455</updated>
-      <workItem from="1670157195087" duration="3982000" />
+      <workItem from="1670157195087" duration="4305000" />
     </task>
     <task id="LOCAL-00001" summary="effacer le projet qui ne fonctionnait pas">
       <created>1670157321539</created>
@@ -122,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670179504929</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ajouter des boutons de navigation qui utilis les props ajouter par withrouter">
+      <created>1670179625794</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670179625794</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ajouter des boutons de navigation qui utilis les props ajouter par withrouter">
+      <created>1670179703157</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670179703157</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +167,7 @@
     <MESSAGE value="Utiliser le Hook useState avec un composant sans etat" />
     <MESSAGE value="Afficher les props d’un composant routé vs non routé" />
     <MESSAGE value="Créer un HOC avec CheckProps" />
-    <option name="LAST_COMMIT_MESSAGE" value="Créer un HOC avec CheckProps" />
+    <MESSAGE value="ajouter des boutons de navigation qui utilis les props ajouter par withrouter" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajouter des boutons de navigation qui utilis les props ajouter par withrouter" />
   </component>
 </project>
