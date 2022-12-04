@@ -1,4 +1,4 @@
-import {BrowserRouter, NavLink, Redirect, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, NavLink, Redirect, Route, Switch, withRouter} from 'react-router-dom';
 import './App.css';
 import {useState} from "react";
 
@@ -37,20 +37,23 @@ const Page404 = () => {
 };
 
 const CheckProps = (props) => {
+   console.log('mon HOC :' + props +' avec withRouter');
    console.log(props);
    return (
       <div>Vérifier les props de CheckProps</div>
    )
 };
+const CheckPropsWithRouter = withRouter(CheckProps);
    function App() {
       return (
 
          <BrowserRouter>
             <CheckProps qqchose="abc"/>
+            <CheckPropsWithRouter/>
             <header>
                <h2>Menu</h2>
                <ul>
-                  <li><NavLink to="/" activeClasName="lien-actif"
+                  <li><NavLink to="/" activeClassName="lien-actif"
                                activeStyle={{color: "red", fontWeight: "bold"}}>Accueil</NavLink></li>
                   <li><NavLink to='/faq' activeClassName="lien-actif"
                                activeStyle={{color: "red", fontWeight: "bold"}}> F.A.Q </NavLink></li>

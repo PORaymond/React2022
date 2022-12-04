@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ca8908-88b7-42de-ada1-4eba0f019a0d" name="Changes" comment="exact à true">
+    <list default="true" id="c1ca8908-88b7-42de-ada1-4eba0f019a0d" name="Changes" comment="Afficher les props d’un composant routé vs non routé">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
@@ -51,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670157191455</updated>
-      <workItem from="1670157195087" duration="2336000" />
+      <workItem from="1670157195087" duration="3647000" />
     </task>
     <task id="LOCAL-00001" summary="effacer le projet qui ne fonctionnait pas">
       <created>1670157321539</created>
@@ -102,7 +102,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670159483218</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Utiliser le Hook useState avec un composant sans etat">
+      <created>1670159814503</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670159814503</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Afficher les props d’un composant routé vs non routé">
+      <created>1670160165596</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670160165596</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +143,9 @@
     <MESSAGE value="Utiliser NavLink&#10;Ajouter du style&#10;Note: il est nécessaire d’exécuter `npm install` à ce stade." />
     <MESSAGE value="Utiliser NavLink&#10;Ajouter du style&#10;Note : il est nécessaire d’exécuter `npm install` à ce stade." />
     <MESSAGE value="exact à true" />
-    <option name="LAST_COMMIT_MESSAGE" value="exact à true" />
+    <MESSAGE value="Ajouter un composant Redirect" />
+    <MESSAGE value="Utiliser le Hook useState avec un composant sans etat" />
+    <MESSAGE value="Afficher les props d’un composant routé vs non routé" />
+    <option name="LAST_COMMIT_MESSAGE" value="Afficher les props d’un composant routé vs non routé" />
   </component>
 </project>
