@@ -2,9 +2,15 @@ import {BrowserRouter, NavLink, Redirect, Route, Switch, withRouter} from 'react
 import './App.css';
 import {useState} from "react";
 
-const Accueil = () => {
-   return (<div>Accueil</div>)
+const Accueil = (props) => {
+   return (
+      <div>
+         Je suis la page d'Accueil! <br/> <br/>
+         <button onClick={()=>{props.history.goBack()}}> Reculez CTL+Z !</button> <br/> <br/>
+         <button onClick={()=>{props.history.goForward()}}> Avancez  CTL+Y!</button> <br/>
+      </div>)
 };
+
 const Faq = (props) => {
    console.log("Les props du composant Faq :");
    console.log(props);
