@@ -1,4 +1,4 @@
-import {BrowserRouter, Link, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, NavLink, Route, Switch} from 'react-router-dom';
 import './App.css';
 
 const Accueil = () => { return (<div>Je suis Accueil</div>) };
@@ -28,8 +28,9 @@ function App() {
                <header>
                   <h2>Menu</h2>
                   <ul>
-                     <li><Link to="/">Accueil</Link></li>
-                     <li><Link to="/faq">Foire aux questions</Link></li>
+                     <li><NavLink to="/" activeClasName="lien-actif" activeStyle={{color:"red", fontWeight:"bold"}}>Accueil</NavLink></li>
+                     <li> <NavLink to='/faq' activeClassName="lien-actif" activeStyle={{color:"red", fontWeight:"bold"}}> F.A.Q </NavLink></li>
+                     <li> <NavLink to='/cgv' activeClassName="lien-actif" activeStyle={{color:"red", fontWeight:"bold"}}> Conditions de vente </NavLink></li>
                   </ul>
                </header>
                 <Switch>

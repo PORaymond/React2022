@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ca8908-88b7-42de-ada1-4eba0f019a0d" name="Changes" comment="maj Metadata" />
+    <list default="true" id="c1ca8908-88b7-42de-ada1-4eba0f019a0d" name="Changes" comment="Ajouter un menu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670157191455</updated>
-      <workItem from="1670157195087" duration="356000" />
+      <workItem from="1670157195087" duration="1886000" />
     </task>
     <task id="LOCAL-00001" summary="effacer le projet qui ne fonctionnait pas">
       <created>1670157321539</created>
@@ -61,7 +67,28 @@
       <option name="project" value="LOCAL" />
       <updated>1670157391500</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Désanthropomorphiser le projet">
+      <created>1670158121008</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670158121008</updated>
+    </task>
+    <task id="LOCAL-00004" summary="matedata">
+      <created>1670158148333</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670158148333</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ajouter un menu">
+      <created>1670158418514</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670158418514</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +108,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="effacer le projet qui ne fonctionnait pas" />
     <MESSAGE value="maj Metadata" />
-    <option name="LAST_COMMIT_MESSAGE" value="maj Metadata" />
+    <MESSAGE value="maj notes&#10;&#10;(cherry picked from commit a7612e6cd158f249b54ba9d9ea038456eeaf0b11)" />
+    <MESSAGE value="Désanthropomorphiser le projet" />
+    <MESSAGE value="matedata" />
+    <MESSAGE value="Ajouter un menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajouter un menu" />
   </component>
 </project>
