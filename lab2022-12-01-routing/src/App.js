@@ -1,7 +1,7 @@
 import {BrowserRouter, NavLink, Route, Switch} from 'react-router-dom';
 import './App.css';
 
-const Accueil = () => { return (<div>Je suis Accueil</div>) };
+const Accueil = () => { return (<div>Accueil</div>) };
 const Faq = (props) => {
     //console.log(props);
     return (
@@ -35,7 +35,7 @@ function App() {
                </header>
                 <Switch>
 
-                    <Route path="/" component={Accueil} exact />
+                    <Route path="/" component={Accueil} exact={true} />
                     <Route path="/faq" component={Faq} />
                     <Route path="/cgv" component={Cgv} />
                     <Route path="*" component={Page404} />

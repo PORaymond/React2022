@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1ca8908-88b7-42de-ada1-4eba0f019a0d" name="Changes" comment="Ajouter un menu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c1ca8908-88b7-42de-ada1-4eba0f019a0d" name="Changes" comment="Utiliser NavLink&#10;Ajouter du style&#10;Note : il est nécessaire d’exécuter `npm install` à ce stade.">
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670157191455</updated>
-      <workItem from="1670157195087" duration="1886000" />
+      <workItem from="1670157195087" duration="2209000" />
     </task>
     <task id="LOCAL-00001" summary="effacer le projet qui ne fonctionnait pas">
       <created>1670157321539</created>
@@ -88,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670158418514</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Utiliser NavLink&#10;Ajouter du style&#10;Note : il est nécessaire d’exécuter `npm install` à ce stade.">
+      <created>1670159328703</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670159328703</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +118,8 @@
     <MESSAGE value="Désanthropomorphiser le projet" />
     <MESSAGE value="matedata" />
     <MESSAGE value="Ajouter un menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajouter un menu" />
+    <MESSAGE value="Utiliser NavLink&#10;Ajouter du style&#10;Note: il est nécessaire d’exécuter `npm install` à ce stade." />
+    <MESSAGE value="Utiliser NavLink&#10;Ajouter du style&#10;Note : il est nécessaire d’exécuter `npm install` à ce stade." />
+    <option name="LAST_COMMIT_MESSAGE" value="Utiliser NavLink&#10;Ajouter du style&#10;Note : il est nécessaire d’exécuter `npm install` à ce stade." />
   </component>
 </project>
