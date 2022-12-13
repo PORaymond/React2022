@@ -9,4 +9,4 @@ https://reactrouter.com/en/main/upgrading/v5
 
 - Utiliser `npm install react-router-dom@6` à l’étape *Upgrade to React Routre v6*
 - J’essaie de faire en sorte que chaque commit soit significatif. Voir les messages de commit.
-- 
+
