@@ -19,3 +19,5 @@ app.get('/page1', (req, res) => {
 app.get('/page2', (req, res) => {
    res.sendFile(__dirname + '/page2.html')
 })
+
+app.post('/quotes', (req, res) => {console.log(req.body)})
