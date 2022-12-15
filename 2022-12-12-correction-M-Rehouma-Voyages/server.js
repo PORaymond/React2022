@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }))
 
-const voyages = require('./flight_2015new');
+const voyages = require('./flight_2015new.json');
 
 var resultat = "<h1>404 not fund!</h1>"
 
