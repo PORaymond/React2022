@@ -1,9 +1,7 @@
-import { useHistory } from 'react-router-dom';
-import { Container } from 'semantic-ui-react';
-import { useWindowsSize } from './useWindowsSize';
-import { useEffect } from 'react';
 
-const DemoHooksPerso = (props) => {
+import { useWindowsSize } from './useWindowsSize';
+
+const DemoHooksPerso = () => {
    const [largeur,hauteur] = useWindowsSize();
    
   
