@@ -13,7 +13,7 @@ app.listen(3000, function () {
 
 
 app.get('/', (req, res) => {
-    res.send('/index.html')
+    res.sendFile(__dirname + '/index.html')
 })
 
 app.get('/voyages', (req, res) => {
