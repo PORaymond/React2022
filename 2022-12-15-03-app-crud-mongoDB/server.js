@@ -2,6 +2,8 @@ const express = require('express')
 const bodyParser= require('body-parser')
 const app = express()
 const MongoClient = require('mongodb').MongoClient
+import {connectionString} from "./connectionString";
+console.log("Chaine de connection: " + connectionString)
 
 app.listen(3000, function() {
    console.log('listening on 3000')
