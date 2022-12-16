@@ -5,4 +5,6 @@ node-modules/
 /2022-12-15-02-quotes-02/node_modules/
 /2022-12-12-correction-M-Rehouma-Voyages/node_modules/
 /2022-12-15-01-quotes-01/node_modules/
-/2022-12-15-03-app-crud-mongoDB/connectionString.js
+/2022-12-15-03-app-crud-mongoDB/modules/connectionString.mjs
+/2022-12-15-03-app-crud-mongoDB/.env
+

@@ -1,22 +1,46 @@
 {
+
   "name": "app_mongo_crud",
+
   "version": "1.0.0",
+
   "description": "",
+
   "main": "server.js",
+
   "scripts": {
+
     "dev": "nodemon server.js",
+
     "test": "echo \"Error: no test specified\" && exit 1"
+
   },
+
   "author": "",
+
   "license": "ISC",
+
   "devDependencies": {
+
     "nodemon": "^2.0.20"
+
   },
+
   "dependencies": {
+
     "body-parser": "^1.20.1",
+
+    "dotenv": "^16.0.3",
+
     "ejs": "^3.1.8",
+
     "express": "^4.18.2",
+
     "mongodb": "^4.12.1",
+
     "np": "^7.6.2"
+
   }
+
 }
+

@@ -1,10 +1,9 @@
 const express = require('express')
+require('dotenv').config()
 const bodyParser= require('body-parser')
 const app = express()
 const MongoClient = require('mongodb').MongoClient
-import {connectionString} from "./connectionString";
-console.log("Chaine de connection: " + connectionString)
-
+const connectionString  = process.env.connectionString;
 app.listen(3000, function() {
    console.log('listening on 3000')
 })
@@ -23,12 +22,19 @@ app.get('/page2', (req, res) => {
    res.sendFile(__dirname + '/page2.html')
 })
 
+
+MongoClient.connect(connectionString)
+   .then(client => {
+      console.log('Connected to Database')
+      const db = client.db('star-wars-quotes')
+      const quotesCollection = db.collection('quotes')
+   })
+   .catch(console.error)
+
 app.post('/quotes', (req, res) => {
    console.log(req.body)
 })
 
-MongoClient.connect(connectionString, {useUnifiedTopology: true})
-   .then(client =>{
-      console.log('Connected to DB');
-      const db = client.db('star-wars-quotes')
-   })
+
+
+
