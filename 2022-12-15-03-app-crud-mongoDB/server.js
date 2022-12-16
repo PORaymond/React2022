@@ -32,7 +32,11 @@ MongoClient.connect(connectionString)
    .catch(console.error)
 
 app.post('/quotes', (req, res) => {
-   console.log(req.body)
+   quotesCollection.insertOne(req.body)
+      .then(result => {
+         console.log(result)
+      })
+      .catch(error => console.error(error))
 })
 
 
