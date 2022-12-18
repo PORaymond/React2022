@@ -4,6 +4,7 @@ const bodyParser= require('body-parser')
 const app = express()
 const MongoClient = require('mongodb').MongoClient
 const connectionString  = process.env.connectionString;
+let  quotesCollection;
 app.listen(3000, function() {
    console.log('listening on 3000')
 })
@@ -27,11 +28,11 @@ MongoClient.connect(connectionString)
    .then(client => {
       console.log('Connected to Database')
       const db = client.db('star-wars-quotes')
-      const quotesCollection = db.collection('quotes')
+      quotesCollection = db.collection('quotes')
    })
    .catch(console.error)
 
-app.post('/quotes', (req, res) => {
+app.post('/quotes', (req) => {
    quotesCollection.insertOne(req.body)
       .then(result => {
          console.log(result)
